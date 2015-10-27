@@ -1,0 +1,141 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+
+  background-color: @darkgray;
+  color: @snow;
+
+  .invisible-character,
+  .indent-guide {
+    color: @lightgray;
+  }
+
+  .gutter {
+    background: @darkgray;
+    color: @gray;
+  }
+
+  .is-focused .cursor {
+    border-color: @white;
+  }
+
+  .selection .region {
+    background-color: lighten(@darkgray, 10%);
+  }
+
+  .line-number.cursor-line, .atom-text-editor.is-focused .line.cursor-line {
+    background-color: lighten(@darkgray, 5%);
+    font-weight: bold;
+  }
+
+  .bracket-matcher .region {
+    background-color: #666;
+    opacity: 0.7;
+  }
+
+  .comment {
+    color: @commentGray;
+    font-style: italic;
+  }
+
+  .invalid.deprecated {
+    text-decoration: underline;
+    color: @red;
+  }
+
+  .string {
+    color: @air;
+
+    .constant.character.escape {
+      color: @red;
+    }
+
+    &.regexp {
+      color: @air;
+
+      .source.ruby.embedded,
+      .string.regexp.arbitrary-repitition {
+        color: @red;
+      }
+    }
+  }
+
+  .constant {
+    color: @air;
+  }
+
+  .variable,
+  .variable.parameter,
+  .variable.other {
+    color: @resistanceRed;
+  }
+
+  .entity {
+    color: @blue;
+  }
+
+  .entity.other.inherited-class {
+    font-style: italic;
+    color: @cyan;
+  }
+
+  .storage {
+    color: @coldBlue;
+  }
+
+}
+
+.keyword:not(.keyword.operator), .keyword.operator.logical {
+  color: @coldBlue;
+}
+
+.keyword { color: @coldBlue; }
+
+.support.type.exception {
+  color: @red;
+}
+
+.entity.other.attribute-name {
+  color: @air;
+}
+
+.support.constant {
+  color: @red;
+}
+
+.support.type, .support.class {
+  color: @blue;
+}
+
+.support.other.variable {
+  color: @red;
+}
+
+.invalid {
+  color: white;
+  background-color: @merigold;
+}
+
+.comment {
+  color: @commentGray;
+}
+
+.meta.function.section {
+  background-color: @merigold;
+}
+
+.markup.deleted {
+  color: @red;
+}
+
+.markup.inserted {
+  color: @coldBlue;
+}
+
+.markup.changed {
+  color: @blue;
+}
+
+.markdown-preview {
+  overflow-x: auto
+}

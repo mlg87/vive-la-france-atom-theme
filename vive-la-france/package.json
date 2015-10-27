@@ -1,0 +1,15 @@
+{
+  "name": "vive-la-france",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "Celebrate France's independence in stylez",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/vive-la-france",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
