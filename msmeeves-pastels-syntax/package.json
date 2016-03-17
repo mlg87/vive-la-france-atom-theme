@@ -1,0 +1,16 @@
+{
+  "name": "msmeeves-pastels-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "I really just needed a theme that made my eyes feel like they're cumming, you know?",
+  "keywords": [
+    "syntax",
+    "theme",
+    "msmeeve"
+  ],
+  "repository": "https://github.com/atom/msmeeves-pastels-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
